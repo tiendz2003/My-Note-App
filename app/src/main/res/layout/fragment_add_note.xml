@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.AddNoteFragment">
+
+    <ImageButton
+        android:id="@+id/imageBackButton_add"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_background"
+        android:padding="16dp"
+        android:src="@drawable/vector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/detail_title_add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/vnrb"
+        android:hint="Title"
+        android:background="@null"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBackButton_add" />
+
+    <TextView
+        android:id="@+id/detail_date_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/vn"
+        android:text="Date"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_title_add" />
+
+    <EditText
+        android:id="@+id/detail_description_add"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:hint="Description"
+        android:background="@null"
+        android:textSize="16sp"
+        android:fontFamily="@font/vn"
+        android:gravity="top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_date_add"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSave_add" />
+
+    <ImageView
+        android:id="@+id/detail_emoji"
+        android:layout_width="36dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toEndOf="@+id/detail_title_add"
+        app:layout_constraintTop_toTopOf="@+id/detail_title_add" />
+
+    <Button
+        android:id="@+id/buttonSave_add"
+        android:layout_width="118dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="144dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/vnrb"
+        android:text="Add notes"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/detail_title_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toEndOf="@+id/imageBackButton_add" />
+
+    <ImageButton
+        android:id="@+id/addImageButton"
+        android:layout_width="58dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/add_photo"
+        android:background="@drawable/button_background"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSave_add"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/detail_description_add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
